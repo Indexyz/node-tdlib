@@ -9,7 +9,7 @@ pipeline {
     stage('install deps') {
       steps {
         sh 'npm install -g cmake-js'
-        sh 'apt-get update &&  -y g++ ccache openssl libssl-dev cmake gperf make git libreadline-dev zlib1g-dev' 
+        sh 'apt-get update && apt-get install -y g++ ccache openssl libssl-dev cmake gperf make git libreadline-dev zlib1g-dev' 
       }
     }
     
